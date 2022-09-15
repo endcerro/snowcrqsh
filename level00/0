@@ -1,0 +1,20 @@
+Most of the home is protected and serves no use
+Passwords seems hased
+
+Find in / Files from user flag00
+find / -user flag00 2> /dev/null
+
+We can cat these files and get a key
+
+Good website
+https://www.cachesleuth.com/multidecoder/
+
+
+flag00 x24ti5gi3x0ol2eh4esiuxias
+
+Also this
+http://fbcs.bplaced.net/multi_encoder_decoder.html
+
+Now we have raw value in /etc/passwd
+
+Need something to break it
