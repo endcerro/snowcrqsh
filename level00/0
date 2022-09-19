@@ -22,3 +22,12 @@ Need something to break it
 john on kali vm did it
 
 flag01 f2av5il02puano7naaf6adaaf
+
+next we have a pcap file, look at it in wireshark and follow tcp stream and resolve the string
+ft_wandr...NDRel.L0L
+
+flag 02 kooda2puivaav1idi4f57q8iq
+
+We have a binary that uses flag group rights and uses the env to launch it, fuck up the env
+
+flag 03 qi0maab88jeaj46qoumi7maus
