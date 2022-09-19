@@ -31,3 +31,12 @@ flag 02 kooda2puivaav1idi4f57q8iq
 We have a binary that uses flag group rights and uses the env to launch it, fuck up the env
 
 flag 03 qi0maab88jeaj46qoumi7maus
+
+There is a server in which we can inject code like this (quotes are important)
+
+
+Flag 04 ne2searoevaevoem4ov4ar8ap
+
+Exploit the openarenaserver script and auto feed make it display the key
+
+Flag 05 viuaaale9huek52boumoomioc
