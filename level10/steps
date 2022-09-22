@@ -1,0 +1,9 @@
+In ghydra, break at 
+
+gdb --args ./level10 "token" 127.0.0.1
+
+b *0x08048749
+r
+stepi
+finish
+set $eax = 0
