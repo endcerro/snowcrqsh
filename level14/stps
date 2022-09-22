@@ -1,0 +1,15 @@
+gdb getflag
+b *0x08048b0a
+b *0x08048989
+
+stepi
+finish
+set $eax = 0
+continue
+
+level being /etc/passwd id
+set $eax = level
+
+(btw you can get all the flags this way)
+
+7QiHafiNa3HVozsaXkawuYrTstxbpABHD8CPnHJ

@@ -3,6 +3,12 @@
 use CGI qw{param};
 print "Content-type: text/html\n\n";
 
+
+Looks like we can exec some call in @output
+but it only accepts caps, so can t type path
+
+
+
 sub t {
   $nn = $_[1];
   $xx = $_[0];
