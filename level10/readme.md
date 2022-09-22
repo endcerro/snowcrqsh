@@ -1,6 +1,6 @@
 # Snowcrash10
 
-Mandatory part done, hopefully it gets spicy
+Mandatory part done, hopefully it gets spicy  
 This time we have a suid binary and a token which we can't access
 
 
@@ -13,10 +13,9 @@ total 16
 
 After inspecting the binary it seems that the app wants to connect to a host on port 6969
 
-So let's write a dirty server...done
-Let it run on the client
+So let's write a dirty server and let it run on the client
 
-We still can't open the token even if we bypass the syscall access check
+We still can't open the token even if we bypass the syscall access check  
 While looking at documentation on access , it came clear that this piece is exploitable, and how to right here :
 https://stackoverflow.com/questions/7925177/access-security-hole
 

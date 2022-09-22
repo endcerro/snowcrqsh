@@ -25,7 +25,7 @@ function x($y, $z)
 
 ```
 
-The executable calls the PHP file, in which there is a line that interprets as PHP code
+The executable calls the PHP file, in which there is a line that interprets as PHP code  
 We just have to be able to reach it
 
 It looks something like that

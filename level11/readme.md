@@ -7,7 +7,7 @@ level11@SnowCrash:~$ ls -l
 total 4
 -rwsr-sr-x 1 flag11 level11 668 Mar  5  2016 level11.lua
 ```
-We have access to a lua script that tries into baiting us to reversing a hash (i found this particuliar one online)
+We have access to a lua script that tries into baiting us to reversing a hash (i found this particuliar one online)  
 But the goal here is shell injection, and i can be done with nc (as intended)
 
 

@@ -1,6 +1,7 @@
 # Snowcrash09
 
 This time we have a binary and a token with scrambled code
+
 Upon quick inspection ;
 
 ```sh

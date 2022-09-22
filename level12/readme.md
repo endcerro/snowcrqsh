@@ -9,12 +9,12 @@ total 4
 ```
 The goal is also shell injection as the input is part of the command
 
-Lua uses a lot of regex to modify it's strings
-And so, our input gets in the command in uppercase so it cannot be a path to a command
+Lua uses a lot of regex to modify it's strings  
+Thus, our input gets in the command in uppercase so it cannot be a path to a command
 
 But since it uses regex, we can do stuff like '/*/PAYLOAD' and it can be resolved to /tmp/PAYLOAD
 
-the payload looks something like this 
+The payload looks something like this 
 ```shell
 echo "#!/bin/bash
 getflag > /tmp/logfile" > /tmp/PIKA
