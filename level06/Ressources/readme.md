@@ -25,7 +25,10 @@ function x($y, $z)
 
 ```
 
-The executable calls the PHP file, in which there is a line that interprets as PHP code  
+While the code looks pretty harmless at first glance and just prints what's in the path passed by argument after doing a bunch of regex
+
+After careful inspection we can see that there is a e flag in regex and this flag actually interprets code !
+
 We just have to be able to reach it
 
 It looks something like that
