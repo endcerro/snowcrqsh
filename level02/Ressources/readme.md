@@ -3,7 +3,7 @@
 Ah so this time we have stuff
 
 ```bash
-level02@SnowCrash:~$ ls -l
+~$ ls -l
 total 12
 ----r--r-- 1 flag02 level02 8302 Aug 30  2015 level02.pcap
 ```
@@ -11,9 +11,9 @@ total 12
 Pcap is a format describing a network capture, so we can pull out good old wireshark and load it in
 
 ```bash
-scp -P 6969 level02@localhost:~/level02.pcap ./level02.pcap
-chmod 644 ./level02.pcap
-wireshark ./level02.pcap
+~$ scp -P 6969 level02@localhost:~/level02.pcap ./level02.pcap
+~$ chmod 644 ./level02.pcap
+~$ wireshark ./level02.pcap
 ```
 The packets by themselves aren't that useful but there is interesting data in packet 43 and 91, so there is probably somthing good in between
 

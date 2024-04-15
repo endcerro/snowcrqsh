@@ -3,11 +3,11 @@
 In this first level so nothing evident
 Let's try and find some files that we own
 ```bash
-level00:~$ find / -user level00 2> /dev/null | grep -v dev | grep -v proc
+~$ find / -user level00 2> /dev/null | grep -v dev | grep -v proc
 ```
 But if we look at the flag user we get some interesting stuff
 ```sh
-level00:~$ cat /usr/sbin/john ; cat /rofs/usr/sbin/john
+~$ cat /usr/sbin/john ; cat /rofs/usr/sbin/john
 cdiiddwpgswtgt
 cdiiddwpgswtgt
 ```
@@ -20,8 +20,8 @@ We can install this tool in a docker container and see if it helps to decipher t
 John needs a file, so we retrieve the content and give it to john
 
 ```bash
-docker build . -t kali
-docker run -v $(pwd):/dockermount -it --rm kali
+~$ docker build . -t kali
+~$ docker run -v $(pwd):/dockermount -it --rm kali
 ┌──(root㉿88f4e5b50056)-[/]
 └─ echo "cdiiddwpgswtgt" > john.txt ; john ./john.txt
     Created directory: /root/.john
